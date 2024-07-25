@@ -1,0 +1,12 @@
+
+//Function
+
+
+#include<iostream>
+using namespace std;
+
+int main()      
+{
+    cout<<"In the main function"<<endl;
+    return 0;   //the main function is returning 0
+}
