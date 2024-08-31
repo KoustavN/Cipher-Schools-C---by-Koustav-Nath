@@ -1,41 +1,28 @@
-//1 Selection Sort:- 
-
-#include<iostream>
+include<iostream>
 using namespace std;
+
+class student
+{
+   public:
+   string name;
+   int mids;
+   float ends;
+   bool pre_abs;
+};
+
+class Car
+{
+    public:
+    string car_name;
+    string tyre_name;
+    int number_of_tyres;
+    int Number_of_seats;
+
 
 int main()
 {
-    int a[10];
-    int i;
-    for(i=0;i<10;i++)
-    {
-        cin>>a[i];
-    }
+    student a,b,c;  // here they are of type student which is a user defined data type
+    inr d,e,f; // here they are of type int
+    vehicle hyundi, suzuki, ferrari;
 
-    //Start of selection sort
-
-    int least_index;    //stores the index of the least element
-
-    int j;
-    for(i=0;i<9;i++)
-    {
-        least_index = i;
-
-        for(j=i;j<10;j++)
-        {
-            if(a[j] < a[least_index])
-            {
-                least_index = j;    //If we find an index in j=(0,9) at which a[j] is less than the least index which we have assumed, then this j will the new least index
-            }
-        }
-        int temp;
-        temp = a[i];
-        a[i] = a[least_index];
-        a[least_index] = temp;
-    }
-    cout<<"Elements after sorting are: ";
-    for(i=0;i<10;i++)
-    {
-        cout<<a[i]<<" ";
-    }
 }
